@@ -1,0 +1,26 @@
+.mainChartContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionBox[id='warTax'] {
+  padding: 7vh 4vh;
+}
+
+.sectionBox[id='about'] {
+  padding: 5vh;
+}
+
+.sectionBox[id='ig'] {
+  padding: 5vh 10vh;
+}
+
+.sectionBox[id='pledge'] {
+  padding: 2vh 5vh;
+}
+
+.sectionBox[id='#pledged'] {
+  padding: 2vh 10vh;
+}

@@ -1,0 +1,58 @@
+.landingChartContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.horizontalContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-50%);
+}
+
+.sectionBox[id='landing1'] {
+  padding: 8vh 20vh;
+}
+
+.sectionBox[id='landing1']:hover {
+  cursor: auto;
+  border-color: black;
+}
+
+.sectionBox[id='landing2'] {
+  padding: 3vh 7vh;
+}
+
+.sectionBox[id='landing3'] {
+  padding: 3vh 7vh;
+}
+
+.typeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.type1 {
+  text-wrap: nowrap;
+}
+
+.chartLine {
+  width: 1.5vh;
+  height: 15vh;
+  background-color: black;
+}
+
+.chartLine[id='horizontal1'] {
+  width: 60vh;
+  height: 1.5vh;
+  background-color: black;
+}
