@@ -3,7 +3,7 @@ import MainChart from '../../components/mainChart/MainChart'
 
 export default function Main() {
   return (
-    <div>
+    <div className='pageContainer'>
       <MainChart />
     </div>
   )

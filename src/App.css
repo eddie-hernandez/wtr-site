@@ -2,8 +2,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-40%, -80%);
+  transform: translate(-40%, -80%);
 }
 
 .sectionBox {
@@ -17,4 +17,16 @@
 .sectionBox:hover {
   cursor: pointer;
   border-color: green;
+}
+
+.chartLine.vertical {
+  width: 1vh;
+  height: 15vh;
+  background-color: black;
+}
+
+.chartLine.horizontal {
+  width: 15vh;
+  height: 1vh;
+  background-color: black;
 }

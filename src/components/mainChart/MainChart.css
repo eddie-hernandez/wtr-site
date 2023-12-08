@@ -5,22 +5,59 @@
   align-items: center;
 }
 
-.sectionBox[id='warTax'] {
-  padding: 7vh 4vh;
+.horizontalSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.sectionBox[id='about'] {
+.rotateContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  transform: translateY(14%);
+}
+
+.rotateLine[id='horToVer'] {
+  border-top: 1vh solid black;
+  border-right: 1vh solid black;
+  height: 20vh;
+  width: 10vh;
+  transform: translateY(130%);
+}
+
+.rotateLine[id='verToHor'] {
+  border-right: 1vh solid black;
+  border-bottom: 1vh solid black;
+  height: 10vh;
+  width: 45vh;
+  transform: translate(-76%, 239%);
+}
+
+.sectionBox[id='main1'] {
+  padding: 7vh 0vh;
+}
+
+.sectionBox[id='main2'] {
   padding: 5vh;
 }
 
-.sectionBox[id='ig'] {
+.sectionBox[id='main3'] {
   padding: 5vh 10vh;
 }
 
-.sectionBox[id='pledge'] {
+.sectionBox[id='main4'] {
+  transform: translate(-20%, 130%);
   padding: 2vh 5vh;
 }
 
-.sectionBox[id='#pledged'] {
+.sectionBox[id='main5'] {
+  transform: translate(-173%, 70%);
   padding: 2vh 10vh;
+  z-index: 9999;
+}
+
+.chartLine.vertical[id='mainVert1'] {
+  height: 50vh;
 }
