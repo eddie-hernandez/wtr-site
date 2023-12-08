@@ -1,9 +1,15 @@
 .pageContainer {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-40%, -80%);
-  transform: translate(-40%, -80%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleBox {
+  background-color: white;
+  border: 9px solid black;
+  padding: 5vh 20vh;
+  max-width: 50vh;
+  text-align: center;
 }
 
 .sectionBox {

@@ -5,38 +5,37 @@
   align-items: center;
 }
 
-.horizontalSection {
+.horizontalSection[id='topHor'] {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.rotateContainer {
+.horizontalSection[id='bottomHor'] {
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   justify-content: center;
   align-items: flex-start;
-  transform: translateY(14%);
+  align-self: flex-end;
+  transform: translateY(-77%);
 }
 
-.rotateLine[id='horToVer'] {
-  border-top: 1vh solid black;
-  border-right: 1vh solid black;
-  height: 20vh;
-  width: 10vh;
-  transform: translateY(130%);
-}
-
-.rotateLine[id='verToHor'] {
-  border-right: 1vh solid black;
-  border-bottom: 1vh solid black;
-  height: 10vh;
-  width: 45vh;
-  transform: translate(-76%, 239%);
+.verticalSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-self: flex-end;
+  transform: translateY(calc(-28% - 1px));
 }
 
 .sectionBox[id='main1'] {
   padding: 7vh 0vh;
+}
+
+.sectionBox[id='main1']:hover {
+  cursor: auto;
+  border-color: black;
 }
 
 .sectionBox[id='main2'] {
@@ -48,16 +47,20 @@
 }
 
 .sectionBox[id='main4'] {
-  transform: translate(-20%, 130%);
   padding: 2vh 5vh;
+  transform: translateX(50%);
 }
 
 .sectionBox[id='main5'] {
-  transform: translate(-173%, 70%);
+  transform: translateY(-50%);
   padding: 2vh 10vh;
   z-index: 9999;
 }
 
 .chartLine.vertical[id='mainVert1'] {
-  height: 50vh;
+  height: 20vh;
+}
+
+.chartLine.horizontal[id='mainHor4'] {
+  width: 40vh;
 }

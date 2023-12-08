@@ -1,0 +1,7 @@
+.pageContainer[id='main'] {
+  -webkit-transform: translate(-5%, 10%);
+  transform: translate(-5%, 10%);
+}
+
+/* FIND A WAY TO MAKE OVERFLOW HIDDEN ON MAIN PAGE, 
+TRY USE EFFECT AND ACCESS URL LOCATION TO LIMIT THE STYLE TO THIS PAGE ONLY */
