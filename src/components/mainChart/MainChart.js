@@ -29,7 +29,7 @@ export default function MainChart() {
       </div>
       <div className="verticalSection">
         <div className="chartLine vertical" id="mainVert1" />
-        <Link to="pledgeform">
+        <Link to="/pledgeform">
           <div className="sectionBox" id="main4">
             <h1>
               PLEDGE
@@ -42,7 +42,7 @@ export default function MainChart() {
       </div>
       <div className="horizontalSection" id="bottomHor">
         <div className="chartLine horizontal" id='mainHor4' />
-        <Link>
+        <Link to='/pledged'>
           <div className="sectionBox" id="main5"><h1>
             #<br/>PLEDGED</h1></div>
         </Link>

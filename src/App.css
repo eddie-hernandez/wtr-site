@@ -4,6 +4,17 @@
   align-items: center;
 }
 
+.overflowContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  row-gap: 10vh;
+  width: 100vw;
+  height: 60vh;
+  overflow: scroll;
+}
+
 .titleBox {
   background-color: white;
   border: 9px solid black;

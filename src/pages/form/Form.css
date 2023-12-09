@@ -1,3 +1,38 @@
+.pageContainer[id='formpage'] {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 5vh;
+  transform: translateY(5%);
+}
+
+.titleBox[id='formTitle'] {
+  padding: 5vh 10vh;
+}
+
 .formContainer {
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
+  height: 70vh;
+  overflow: scroll;
+}
+
+.formWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 150vh;
+  margin-top: 31vh;
+}
+
+.warTaxForm {
+  width: 80vh;
+  height: 200vh;
+  background-color: white;
+  border: 5px solid black;
+  padding: 5vh 0vh;
 }

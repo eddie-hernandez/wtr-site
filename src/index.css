@@ -1,6 +1,15 @@
-html {
+body {
   background-image: url('./assets/temp-bg.jpeg');
   background-size: cover;
+}
+
+body.overflowRestrict {
+  overflow: hidden;
+}
+
+body.whitebg {
+  background-image: none;
+  background-color: white;
 }
 
 * {
@@ -17,6 +26,11 @@ html {
 
 h1 {
   font-size: 6vh;
+  font-family: 'Celandine', sans-serif;
+}
+
+h3 {
+  font-size: 4vh;
   font-family: 'Celandine', sans-serif;
 }
 
