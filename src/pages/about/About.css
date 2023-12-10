@@ -17,7 +17,6 @@
 .slideimg {
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain;
   border: 5px solid black;
 }
 
@@ -39,4 +38,26 @@
   font-size: 6vh;
   content: '>';
   color: black;
+}
+
+@media screen and (max-width: 1000px) and (orientation: portrait) {
+  .slick-prev {
+    left: -5vh;
+  }
+  .slick-next {
+    right: -5vh;
+  }
+  .sliderContainer {
+    width: 70%;
+    transform: translateY(50%);
+  }
+  .aboutSlide {
+    width: 80vh;
+    height: 40vh;
+  }
+  .slideimg {
+    max-width: 95%;
+    height: 100%;
+    object-fit: contain;
+  }
 }

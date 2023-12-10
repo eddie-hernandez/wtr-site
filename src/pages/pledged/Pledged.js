@@ -13,7 +13,7 @@ export default function Pledged() {
           PLEDGED
         </h1>
       </div>
-      <div className='overflowContainer'>
+      <div className='overflowContainer' id='pledgedPage'>
         <div className="mapWrapper">
           <img src={map} alt="pledgedMap" className="imgBox" />
         </div>

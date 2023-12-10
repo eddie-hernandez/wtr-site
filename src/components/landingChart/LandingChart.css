@@ -45,8 +45,31 @@
   text-wrap: nowrap;
 }
 
-.chartLine.vertical[id='horizontal1'] {
+.chartLine.horizontal[id='horizontal1'] {
   width: 60vh;
   height: 1vh;
   background-color: black;
+}
+
+@media screen and (max-width: 1000px) and (orientation: portrait) {
+  .sectionBox[id='landing1'] {
+    padding: 2vh;
+  }
+  .sectionBox[id='landing2'] {
+    padding: 2vh 4vh;
+  }
+  
+  .sectionBox[id='landing3'] {
+    padding: 2vh 4vh;
+  }
+  .chartLine.horizontal[id='horizontal1'] {
+    width: 25vw;
+    height: 1vh;
+    background-color: black;
+  }
+  .chartLine.vertical[id='vertical1'] {
+    width: 1vh;
+    height: 20vh;
+    background-color: black;
+  }
 }

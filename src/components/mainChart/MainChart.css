@@ -64,3 +64,54 @@
 .chartLine.horizontal[id='mainHor4'] {
   width: 40vh;
 }
+
+@media screen and (max-width: 1000px) and (orientation: portrait) {
+  .pageContainer[id='main'] {
+    transform: translate(0, 10%);
+    padding-bottom: 10vh;
+
+  }
+  .horizontalSection[id='topHor'],
+  .horizontalSection[id='bottomHor'] {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    transform: translate(0);
+  }
+  .verticalSection {
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    transform: translate(0);
+  }
+  .chartLine.horizontal {
+    width: 1vh;
+    height: 10vh;
+  }
+  .sectionBox[id='main1'] {
+    padding: 3vh 4vh;
+  }
+  .sectionBox[id='main2'] {
+    padding: 3vh 5vh;
+  }
+  .sectionBox[id='main3'] {
+    padding: 3vh 5vh;
+  }
+  .sectionBox[id='main4'] {
+    padding: 4vh;
+    transform: translate(0);
+  }
+  .sectionBox[id='main5'] {
+    padding: 4vh;
+    transform: translate(0);
+  }
+  .chartLine.vertical[id='mainVert1'],
+  .chartLine.vertical[id='mainVert2'] {
+    display: none;
+  }
+  .chartLine.horizontal[id='mainHor4'] {
+    width: 1vh;
+    height: 10vh;
+  }
+}

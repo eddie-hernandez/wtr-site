@@ -36,3 +36,43 @@
   border: 5px solid black;
   padding: 5vh 0vh;
 }
+
+@media screen and (max-width: 1000px) and (orientation: portrait) {
+  .pageContainer[id='formpage'] {
+    transform: translateY(25%);
+  }
+  .titleBox[id='formTitle'] {
+    padding: 3vh 5vh;
+  }
+@media screen and (max-width: 1000px) and (orientation: portrait) {
+  .pageContainer[id='formpage'] {
+    transform: translateY(25%);
+  }
+  .titleBox[id='formTitle'] {
+    padding: 3vh 5vh;
+  }
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+    overflow: auto;
+  }
+  .formWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+  }
+  .warTaxForm {
+    width: 90%;
+    max-width: 80vh;
+    height: 45vh;
+    background-color: white;
+    border: 5px solid black;
+  }
+}
+}

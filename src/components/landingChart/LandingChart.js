@@ -27,7 +27,7 @@ export default function LandingChart() {
           <h1 className="type1">WAR TAX RESISTANCE?</h1>
         </div>
       </div>
-      <div className="chartLine vertical" />
+      <div className="chartLine vertical" id='vertical1' />
       <div className="horizontalContainer">
         <div
           className="sectionBox"
@@ -36,7 +36,7 @@ export default function LandingChart() {
         >
           <h1>NO</h1>
         </div>
-        <div className="chartLine vertical" id="horizontal1" />
+        <div className="chartLine horizontal" id="horizontal1" />
         <div
           className="sectionBox"
           id="landing3"

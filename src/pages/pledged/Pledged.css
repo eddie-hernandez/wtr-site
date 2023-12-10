@@ -34,3 +34,26 @@
   border: 1vh solid black;
   padding: 5vh;
 }
+
+@media screen and (max-width: 1000px) and (orientation: portrait) {
+  .pageContainer[id='pledgedPage'] {
+    row-gap: 5vh;
+    transform: translateY(25%);
+  }
+  .mapWrapper {
+    width: 35vh;
+    height: 40vh;
+    padding: 3vh;
+  }
+  .titleBox[id='whywepledge'] {
+    padding: 3vh 5vh;
+  }
+  .pledgesBox {
+    width: 30vh;
+  }
+  .overflowContainer[id='pledgedPage'] {
+    height: 50vh;
+    row-gap: 5vh;
+    padding-bottom: 5vh;
+  }
+}

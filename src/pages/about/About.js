@@ -12,15 +12,12 @@ import slide4 from '../../assets/about/4.png'
 import slide5 from '../../assets/about/5.png'
 import slide6 from '../../assets/about/6.png'
 import slide7 from '../../assets/about/7.png'
-import slide8 from '../../assets/about/8.png'
-import slide9 from '../../assets/about/9.png'
-import slide10 from '../../assets/about/10.png'
 
 export default function About() {
   const settings = {
     dots: false,
     infinite: false,
-    speed: 500,
+    speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
   }
@@ -49,15 +46,6 @@ export default function About() {
           </div>
           <div className="aboutSlide">
             <img src={slide7} alt="slide7" className="slideimg" />
-          </div>
-          <div className="aboutSlide">
-            <img src={slide8} alt="slide8" className="slideimg" />
-          </div>
-          <div className="aboutSlide">
-            <img src={slide9} alt="slide9" className="slideimg" />
-          </div>
-          <div className="aboutSlide">
-            <img src={slide10} alt="slide10" className="slideimg" />
           </div>
         </Slider>
       </div>
