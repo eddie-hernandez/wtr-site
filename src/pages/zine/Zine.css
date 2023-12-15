@@ -63,6 +63,12 @@
   .slick-next:before {
     font-size: 10vw;
   }
+  .zineSlide {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 80vh;
+    max-height: 80vh;
+  }
   .slick-prev {
     transform: translateY(-150%);
     left: -18vh;
