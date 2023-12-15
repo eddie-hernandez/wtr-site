@@ -27,11 +27,6 @@
   align-items: center;
 }
 
-.slick-slider.slick-initialized {
-  min-width: 100%;
-  min-height: 100%;
-}
-
 .slick-prev {
   z-index: 9998;
 }
@@ -115,7 +110,10 @@
     transform: translateY(25%);
   }
   .zineSlide {
-    width: 80vh;
+    min-width: 80vw;
+    max-width: 80vw;
+    min-height: 60vh;
+    max-height: 60vh;
     height: 60vh;
     padding: 0vh 0.5vh 5vh 0.5vh;
   }
