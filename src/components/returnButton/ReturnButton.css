@@ -3,8 +3,14 @@
 }
 
 .returnButton.visible {
-  position: absolute;
-  top: 10%;
-  left: 5%;
+  position: fixed;
+  top: 5%;
+  left: 2%;
   z-index: 9999;
+}
+
+@media screen and (max-width: 1400px) {
+  .returnButton.visible {
+    left: 5%;
+  }
 }

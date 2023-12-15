@@ -17,7 +17,7 @@
 
 .titleBox {
   background-color: white;
-  border: 5px solid black;
+  border: 1vh solid black;
   padding: 5vh 20vh;
   max-width: 50vh;
   text-align: center;
@@ -25,7 +25,7 @@
 
 .sectionBox {
   background-color: white;
-  border: 9px solid black;
+  border: 1vh solid black;
   padding: 3vh;
   max-width: 50vh;
   text-align: center;

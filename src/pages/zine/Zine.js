@@ -23,28 +23,28 @@ export default function Zine() {
   }
 
   return (
-    <div className="pageContainer" id="aboutpage">
+    <div className="pageContainer" id="zinepage">
       <div className="sliderContainer">
         <Slider {...settings}>
-          <div className="aboutSlide">
+          <div className="zineSlide">
             <img src={slide1} alt="slide1" className="slideimg" />
           </div>
-          <div className="aboutSlide">
+          <div className="zineSlide">
             <img src={slide2} alt="slide2" className="slideimg" />
           </div>
-          <div className="aboutSlide">
+          <div className="zineSlide">
             <img src={slide3} alt="slide3" className="slideimg" />
           </div>
-          <div className="aboutSlide">
+          <div className="zineSlide">
             <img src={slide4} alt="slide4" className="slideimg" />
           </div>
-          <div className="aboutSlide">
+          <div className="zineSlide">
             <img src={slide5} alt="slide5" className="slideimg" />
           </div>
-          <div className="aboutSlide">
+          <div className="zineSlide">
             <img src={slide6} alt="slide6" className="slideimg" />
           </div>
-          <div className="aboutSlide">
+          <div className="zineSlide">
             <img src={slide7} alt="slide7" className="slideimg" />
           </div>
         </Slider>
