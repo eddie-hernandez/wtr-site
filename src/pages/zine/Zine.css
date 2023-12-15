@@ -95,7 +95,7 @@
 
 @media screen and (max-width: 1400px) and (orientation: portrait) {
   .pageContainer[id='zinepage'] {
-    transform: translateY(0%);
+    transform: translateY(-5%);
   }
   .slick-prev {
     left: -1vh;
@@ -187,5 +187,3 @@
     transform: translateY(0);
   }
 }
-
-/* fix slider container restraints */
