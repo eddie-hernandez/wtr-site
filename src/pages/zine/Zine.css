@@ -27,6 +27,11 @@
   align-items: center;
 }
 
+.slick-slider.slick-initialized {
+  min-width: 100%;
+  min-height: 100%;
+}
+
 .slick-prev {
   z-index: 9998;
 }
