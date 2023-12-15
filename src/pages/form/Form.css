@@ -2,12 +2,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 5vh;
-  transform: translateY(5%);
+  row-gap: 9vh;
+  margin-top: 5vh;
 }
 
 .titleBox[id='formTitle'] {
-  padding: 5vh 10vh;
+  width: 50vh;
+  padding: 4vh 5vh 5vh 5vh;
+  height: 10vh;
+  max-width: 50vh;
+  max-height: 5vh;
 }
 
 .formContainer {
@@ -16,63 +20,67 @@
   justify-content: flex-start;
   align-items: center;
   width: 100vw;
-  height: 70vh;
+  max-width: 100vw;
+  max-height: 70vh;
+  height: 100%;
   overflow: scroll;
-}
-
-.formWrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 150vh;
-  margin-top: 31vh;
 }
 
 .warTaxForm {
   width: 80vh;
   height: 200vh;
   background-color: white;
-  border: 5px solid black;
+  border: 3px solid black;
   padding: 5vh 0vh;
 }
 
-@media screen and (max-width: 1000px) and (orientation: portrait) {
+@media screen and (max-width: 1400px) and (orientation: portrait) {
   .pageContainer[id='formpage'] {
-    transform: translateY(25%);
+    transform: translateY(0%);
+    row-gap: 4vh;
   }
   .titleBox[id='formTitle'] {
-    padding: 3vh 5vh;
-  }
-@media screen and (max-width: 1000px) and (orientation: portrait) {
-  .pageContainer[id='formpage'] {
-    transform: translateY(25%);
-  }
-  .titleBox[id='formTitle'] {
-    padding: 3vh 5vh;
+    width: 30vh;
+    padding: 5vh 4vh 4vh 4vh;
+    height: 10vh;
+    max-width: 50vh;
+    max-height: 5vh;
   }
   .formContainer {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    height: auto;
-    overflow: auto;
-  }
-  .formWrapper {
-    display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    align-self: center;
     height: auto;
-    margin-top: 0;
+    overflow: auto;
   }
   .warTaxForm {
     width: 90%;
     max-width: 80vh;
     height: 45vh;
     background-color: white;
-    border: 5px solid black;
+    border: 3px solid black;
   }
 }
+
+@media screen and (max-width: 1200px) and (orientation: landscape) {
+  .pageContainer[id='formpage'] {
+    row-gap: 5vh;
+    transform: translateY(3%);
+  }
+  .titleBox[id='formTitle'] {
+    width: 50vh;
+    padding: 4vh 2vh 6vh 2vh;
+    height: 5vh;
+    max-width: 50vh;
+    max-height: 10vh;
+  }
+  .warTaxForm {
+    width: 80vw;
+    height: 200vh;
+    background-color: white;
+    border: 3px solid black;
+    padding: 5vh 0vh;
+  }
 }

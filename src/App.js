@@ -1,9 +1,9 @@
 import './App.css'
 import { Routes, Route, useLocation } from 'react-router-dom'
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import Landing from './pages/landing/Landing'
 import Main from './pages/main/Main'
-import About from './pages/about/About'
+import Zine from './pages/zine/Zine'
 import Form from './pages/form/Form'
 import Pledged from './pages/pledged/Pledged'
 import ReturnButton from './components/returnButton/ReturnButton'
@@ -14,20 +14,14 @@ export default function App() {
   useEffect(() => {
     if (location === '/main') {
       document.body.classList.add('overflowRestrict')
-    } else if (location === '/about') {
-      document.body.classList.add('whitebg')
-    } else if (location !== '/about') {
       document.body.classList.remove('whitebg')
     } else {
       document.body.classList.remove('overflowRestrict')
-    }
-  }, [location])
-
-  useEffect(() => {
-    if (location === '/about') {
-      document.body.classList.add('whitebg')
-    } else {
-      document.body.classList.remove('whitebg')
+      if (location === '/zine') {
+        document.body.classList.add('whitebg')
+      } else {
+        document.body.classList.remove('whitebg')
+      }
     }
   }, [location])
 
@@ -37,9 +31,9 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/main" element={<Main />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/zine" element={<Zine />} />
         <Route path="/pledgeform" element={<Form />} />
-        <Route path="/pledged" element={<Pledged />} />
+        {/* <Route path="/pledged" element={<Pledged />} /> */}
       </Routes>
     </div>
   )

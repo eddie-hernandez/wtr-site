@@ -35,7 +35,7 @@
   padding: 5vh;
 }
 
-@media screen and (max-width: 1000px) and (orientation: portrait) {
+@media screen and (max-width: 1200px) and (orientation: portrait) {
   .pageContainer[id='pledgedPage'] {
     row-gap: 5vh;
     transform: translateY(25%);

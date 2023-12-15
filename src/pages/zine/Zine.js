@@ -2,7 +2,7 @@ import React from 'react'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import './About.css'
+import './Zine.css'
 
 // importing about images
 import slide1 from '../../assets/about/1.png'
@@ -13,7 +13,7 @@ import slide5 from '../../assets/about/5.png'
 import slide6 from '../../assets/about/6.png'
 import slide7 from '../../assets/about/7.png'
 
-export default function About() {
+export default function Zine() {
   const settings = {
     dots: false,
     infinite: false,

@@ -3,7 +3,7 @@ import LandingChart from '../../components/landingChart/LandingChart'
 
 export default function Landing() {
   return (
-    <div className="pageContainer">
+    <div className="pageContainer" id='landing'>
       <LandingChart />
     </div>
   )

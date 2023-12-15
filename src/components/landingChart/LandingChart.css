@@ -18,7 +18,13 @@
 }
 
 .sectionBox[id='landing1'] {
-  padding: 8vh 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vh;
+  max-width: 80vh;
+  height: 30vh;
+  max-height: 30vh;
 }
 
 .sectionBox[id='landing1']:hover {
@@ -28,6 +34,10 @@
 
 .sectionBox[id='landing2'] {
   padding: 3vh 7vh;
+}
+
+.sectionBox[id='landing2']:hover {
+  border-color: #e4312b;
 }
 
 .sectionBox[id='landing3'] {
@@ -51,14 +61,21 @@
   background-color: black;
 }
 
-@media screen and (max-width: 1000px) and (orientation: portrait) {
+@media screen and (max-width: 1200px) and (orientation: portrait) {
+  .typeContainer h1 {
+    font-size: 4.5vh;
+  }
+  .type1 {
+    text-wrap: wrap;
+  }
   .sectionBox[id='landing1'] {
-    padding: 2vh;
+    max-width: 70vw;
+    max-height: 20vh;
   }
   .sectionBox[id='landing2'] {
     padding: 2vh 4vh;
   }
-  
+
   .sectionBox[id='landing3'] {
     padding: 2vh 4vh;
   }
@@ -71,5 +88,12 @@
     width: 1vh;
     height: 20vh;
     background-color: black;
+  }
+}
+
+@media screen and (max-width: 1200px) and (orientation: landscape) {
+  .landingChartContainer {
+    -webkit-transform: translate(-50%, -45%);
+    transform: translate(-50%, -45%);
   }
 }

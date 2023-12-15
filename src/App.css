@@ -17,7 +17,7 @@
 
 .titleBox {
   background-color: white;
-  border: 9px solid black;
+  border: 5px solid black;
   padding: 5vh 20vh;
   max-width: 50vh;
   text-align: center;
@@ -33,7 +33,7 @@
 
 .sectionBox:hover {
   cursor: pointer;
-  border-color: green;
+  border-color: #149954;
 }
 
 .chartLine.vertical {
@@ -48,6 +48,29 @@
   background-color: black;
 }
 
-@media screen and (max-width: 1000px) and (orientation: portrait) {
-
+@media screen and (max-width: 1400px) and (orientation: portrait) {
+  .titleBox {
+    border: 3px solid black;
+  }
+  .sectionBox {
+    background-color: white;
+    border: 1vh solid black;
+    padding: 3vh;
+    max-width: 50vh;
+    text-align: center;
+  }
 }
+
+@media screen and (max-width: 1400px) and (orientation: landscape) {
+  .titleBox {
+    border: 3px solid black;
+  }
+  .sectionBox {
+    background-color: white;
+    border: 0.75vw solid black;
+    padding: 3vh;
+    max-width: 50vh;
+    text-align: center;
+  }
+}
+

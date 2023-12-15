@@ -8,13 +8,11 @@ export default function Form() {
         <h1>PLEDGE NOW</h1>
       </div>
       <div className="formContainer">
-        <div className="formWrapper">
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSf4mNSrJw7lBJEAOMJH3SmTUvgDECIzixmN-vxJ32GHojzEqQ/viewform?embedded=true"
             className="warTaxForm"
             title="wartaxgform"
           ></iframe>
-        </div>
       </div>
     </div>
   )

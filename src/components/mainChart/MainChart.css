@@ -9,6 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 9998;
 }
 
 .horizontalSection[id='bottomHor'] {
@@ -17,7 +18,7 @@
   justify-content: center;
   align-items: flex-start;
   align-self: flex-end;
-  transform: translateY(-77%);
+  transform: translateY(-73%);
 }
 
 .verticalSection {
@@ -26,28 +27,57 @@
   justify-content: flex-end;
   align-items: flex-end;
   align-self: flex-end;
-  transform: translateY(calc(-28% - 1px));
+  transform: translateY(calc(-32% - 1px));
+  /* ADD WHEN #PLEDGED COMES BACK */
+  /* transform: translateY(calc(-24% - 1px)); */
 }
 
 .sectionBox[id='main1'] {
-  padding: 7vh 0vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40vh;
+  height: 20vh;
+  max-width: 40vh;
+  max-height: 20vh;
 }
 
 .sectionBox[id='main1']:hover {
-  cursor: auto;
-  border-color: black;
+  border-color: #e4312b;
 }
 
 .sectionBox[id='main2'] {
-  padding: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25vw;
+  max-width: 25vw;
+  height: 18vh;
+  max-height: 18vh;
+  padding: 0;
 }
 
 .sectionBox[id='main3'] {
-  padding: 5vh 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10vw;
+  max-width: 10vw;
+  height: 18vh;
+  max-height: 18vh;
+  padding: 0;
 }
 
 .sectionBox[id='main4'] {
-  padding: 2vh 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25vh;
+  height: 15vh;
+  max-width: 25vh;
+  padding-top: 4vh;
   transform: translateX(50%);
 }
 
@@ -65,12 +95,7 @@
   width: 40vh;
 }
 
-@media screen and (max-width: 1000px) and (orientation: portrait) {
-  .pageContainer[id='main'] {
-    transform: translate(0, 10%);
-    padding-bottom: 10vh;
-
-  }
+@media screen and (max-width: 1400px) and (orientation: portrait) {
   .horizontalSection[id='topHor'],
   .horizontalSection[id='bottomHor'] {
     flex-direction: column;
@@ -90,16 +115,30 @@
     height: 10vh;
   }
   .sectionBox[id='main1'] {
-    padding: 3vh 4vh;
+    width: 30vh;
+    height: 15vh;
+    max-width: 30vh;
+    padding: 0vh;
+    max-height: 15vh;
   }
   .sectionBox[id='main2'] {
-    padding: 3vh 5vh;
+    text-wrap: wrap;
+    width: 50vw;
+    max-width: 50vw;
+    height: 10vh;
+    max-height: 10vh;
   }
   .sectionBox[id='main3'] {
-    padding: 3vh 5vh;
+    width: 20vw;
+    max-width: 20vw;
+    height: 10vh;
+    max-height: 10vh;
   }
   .sectionBox[id='main4'] {
-    padding: 4vh;
+    width: 10vh;
+    height: 5vh;
+    max-width: 20vh;
+    padding-top: 4vh;
     transform: translate(0);
   }
   .sectionBox[id='main5'] {
@@ -113,5 +152,172 @@
   .chartLine.horizontal[id='mainHor4'] {
     width: 1vh;
     height: 10vh;
+  }
+}
+
+@media screen and (min-height: 1000px) and (max-height: 1400px) and (max-width: 1400px) and (orientation: portrait) {
+  .sectionBox[id='main2'] {
+    width: 35vw;
+    max-width: 35vw;
+    height: 10vh;
+    max-height: 10vh;
+  }
+}
+
+@media screen and (max-width: 1400px) and (orientation: landscape) {
+  .sectionBox[id='main1'] {
+    width: 25vh;
+    height: 15vh;
+    max-width: 25vh;
+    padding: 4vh 4vh 3vh 4vh;
+    max-height: 15vh;
+  }
+  .chartLine.horizontal {
+    width: 10vh;
+    height: 1vh;
+  }
+  .sectionBox[id='main2'],
+  .sectionBox[id='main3'] {
+    max-height: 13vh;
+  }
+  .sectionBox[id='main4'] {
+    width: 20vh;
+    height: 10vh;
+    max-width: 20vh;
+    max-height: 10vh;
+    padding-top: 4vh;
+  }
+  .verticalSection {
+    transform: translateY(-32%);
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1400px) and (orientation: landscape) {
+  .chartLine.horizontal {
+    width: 10vh;
+  }
+  .sectionBox[id='main2'] {
+    text-wrap: wrap;
+    max-width: 12vw;
+    padding: 3vh;
+  }
+}
+
+@media screen and (max-width: 1000px) and (orientation: landscape) {
+  .sectionBox[id='main1'] {
+    width: 20vw;
+    height: 20vh;
+    max-width: 20vw;
+    padding: 4vh 4vh 3vh 4vh;
+    max-height: 25vh;
+  }
+  .chartLine.horizontal {
+    width: 10vh;
+    height: 0.75vw;
+  }
+  .chartLine.vertical[id='mainVert1'] {
+    width: 0.75vw;
+  }
+  .sectionBox[id='main2'] {
+    text-wrap: wrap;
+    max-width: 12vw;
+    max-height: 18vh;
+    padding: 6vh;
+  }
+  .sectionBox[id='main3'] {
+    text-wrap: wrap;
+    max-width: 15vw;
+    height: 20vh;
+    max-height: 20vh;
+  }
+  .sectionBox[id='main4'] {
+    width: 15vw;
+    height: 20vh;
+    max-width: 15vw;
+    max-height: 20vh;
+    padding-top: 4vh;
+  }
+  .verticalSection {
+    transform: translateY(-34%);
+  }
+}
+
+@media screen and (max-height: 1000px) and (min-width: 500px) and (max-width: 800px) and (orientation: portrait) {
+  .sectionBox[id='main2'] {
+    width: 35vw;
+    max-width: 35vw;
+    height: 10vh;
+    max-height: 10vh;
+  }
+  .sectionBox[id='main3'] {
+    width: 15vw;
+    max-width: 15vw;
+    height: 10vh;
+    max-height: 10vh;
+  }
+}
+
+@media screen and (max-height: 1000px) and (min-width: 500px) and (max-width: 800px) and (orientation: landscape) {
+  .sectionBox[id='main1'] {
+    width: 18vw;
+    height: 15vh;
+    max-width: 18vw;
+    padding: 4vh 4vh 3vh 4vh;
+    max-height: 15vh;
+  }
+  .sectionBox[id='main2'] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    max-width: 25vw;
+    height: 15vh;
+    max-height: 15vh;
+    padding: 0;
+  }
+  .sectionBox[id='main3'] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    max-width: 10vw;
+    height: 15vh;
+    max-height: 15vh;
+    padding: 0;
+  }
+  .sectionBox[id='main4'] {
+    width: 10vw;
+    height: 10vh;
+    max-width: 10vw;
+    padding: 4vh 4vh 3vh 4vh;
+    max-height: 10vh;
+  }
+  .verticalSection {
+    transform: translateY(-32%);
+  }
+}
+
+@media screen and (max-height: 500px) and (min-width: 500px) and (max-width: 900px) and (orientation: landscape) {
+  .sectionBox[id='main1'] {
+    width: 18vw;
+    height: 15vh;
+    max-width: 18vw;
+    padding: 8vh 7vh;
+    max-height: 15vh;
+  }
+  .sectionBox[id='main2'] {
+    text-wrap: wrap;
+    max-width: 12vw;
+    padding: 4vh;
+  }
+  .sectionBox[id='main4'] {
+    width: 10vw;
+    height: 10vh;
+    max-width: 10vw;
+    padding: 5vh;
+    max-height: 10vh;
+  }
+  .verticalSection {
+    transform: translateY(-41%);
   }
 }
