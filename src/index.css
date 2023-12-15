@@ -3,13 +3,14 @@ body {
   background-size: cover;
 }
 
-body.overflowRestrict {
-  overflow: hidden;
-}
-
 body.whitebg {
   background-image: none;
   background-color: white;
+}
+
+body.aboutbg {
+  background-image: url('./assets/czM6Ly9tZWRpYS1wcml2YXRlLmNhbnZhLmNvbS95c19fSS9NQUYycmx5c19fSS8xL3AuanBn.jpeg');
+  background-position: center;
 }
 
 * {
@@ -75,5 +76,7 @@ a {
 }
 
 @media screen and (orientation: landscape) {
-
+  body.overflowRestrict {
+    overflow: hidden;
+  }
 }

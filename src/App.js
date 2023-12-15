@@ -17,11 +17,16 @@ export default function App() {
       document.body.classList.remove('whitebg')
     } else {
       document.body.classList.remove('overflowRestrict')
-      if (location === '/zine') {
-        document.body.classList.add('whitebg')
-      } else {
-        document.body.classList.remove('whitebg')
-      }
+    }
+    if (location === '/zine') {
+      document.body.classList.add('whitebg')
+    } else {
+      document.body.classList.remove('whitebg')
+    }
+    if (location === '/about') {
+      document.body.classList.add('aboutbg')
+    } else {
+      document.body.classList.remove('aboutbg')
     }
   }, [location])
 
