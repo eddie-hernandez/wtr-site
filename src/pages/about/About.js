@@ -22,13 +22,14 @@ export default function About() {
         <Slider {...settings}>
           <div className="aboutSlideContainer">
             {/* SLIDE 1 */}
-            <div className="aboutSlideContent">
+            <div className="aboutSlideContent" id='slide1'>
               <div className="aboutSlideTitle">
                 <h1>
                   Who are <br />
                   we?
                 </h1>
               </div>
+              <div className="aboutSlideInfo" />
               <div className="aboutSlideBottomContainer">
                 <div className="aboutSlideDividerContainer">
                   <div className="aboutSlideDividerLine" />
