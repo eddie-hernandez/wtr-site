@@ -7,6 +7,7 @@ import Zine from './pages/zine/Zine'
 import Form from './pages/form/Form'
 import Pledged from './pages/pledged/Pledged'
 import ReturnButton from './components/returnButton/ReturnButton'
+import About from './pages/about/About'
 
 export default function App() {
   const location = useLocation().pathname
@@ -36,6 +37,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/main" element={<Main />} />
+        <Route path="/about" element={<About />} />
         <Route path="/zine" element={<Zine />} />
         <Route path="/pledgeform" element={<Form />} />
         {/* <Route path="/pledged" element={<Pledged />} /> */}

@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
 body {
   background-image: url('./assets/bg-01.png');
   background-size: cover;
+  background-position: center;
 }
 
 body.whitebg {
@@ -9,8 +12,9 @@ body.whitebg {
 }
 
 body.aboutbg {
-  background-image: url('./assets/czM6Ly9tZWRpYS1wcml2YXRlLmNhbnZhLmNvbS95c19fSS9NQUYycmx5c19fSS8xL3AuanBn.jpeg');
-  background-position: center;
+  /* background-image: url('./assets/czM6Ly9tZWRpYS1wcml2YXRlLmNhbnZhLmNvbS95c19fSS9NQUYycmx5c19fSS8xL3AuanBn.jpeg'); */
+  background-color: grey;
+  background-image: none;
 }
 
 * {
@@ -34,6 +38,12 @@ h1 {
 h3 {
   font-size: 4vh;
   font-family: 'Celandine', sans-serif;
+}
+
+h4,
+h5,
+h6 {
+  font-family: 'JetBrains Mono', monospace;
 }
 
 a {
