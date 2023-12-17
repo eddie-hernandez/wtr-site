@@ -1,14 +1,76 @@
 .pageContainer[id='zinepage'] {
-  transform: translateY(10%);
+  transform: translateY(5%);
 }
 
-.sliderContainer {
+/* .pageContainer#zinepage {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.carousel-root {
+  max-width: 80%;
+  max-height: 100vh;
+}
+
+.react-responsive-carousel .carousel .slide {
+  max-width: 100%;
+  height: auto;
+}
+
+.carousel-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel .slider-wrapper {
+  width: 70vh;
+  height: 100%;
+}
+
+.carousel .slide img {
+  width: 100%;
+  height: auto;
+  padding: 2vh;
+  border: 1vh solid black;
+}
+
+.carousel-arrow {
+  cursor: pointer;
+  font-size: 8vh;
+}
+
+.carousel-arrow-left {
+  padding-right: 2vh;
+}
+
+.carousel-arrow-right {
+  padding-left: 2vh;
+}
+
+.carousel-arrow:hover {
+  color: green;
+}
+
+.arrow-disabled {
+  color: grey;
+}
+
+.arrow-disabled:hover {
+  cursor: not-allowed;
+  color: grey;
+}
+
+/* .sliderContainer {
   width: 50%;
   max-width: 100vh;
   margin: 0 auto;
-}
+} */
 
-.zineSlide {
+/* .zineSlide {
   min-width: 60vh;
   max-width: 60vh;
   min-height: 80vh;
@@ -46,9 +108,9 @@
   font-family: 'Celandine', sans-serif;
   content: '>';
   color: black;
-}
+} */
 
-@media screen and (min-width: 1400px) {
+/* @media screen and (min-width: 1400px) {
   .slick-prev:before {
     font-size: 6vh;
   }
@@ -200,5 +262,35 @@
     right: 16vh;
     bottom: 0vh;
     transform: translateY(0);
+  }
+} */
+
+@media screen and (max-width: 1400px) and (orientation: portrait) {
+  .pageContainer[id='zinepage'] {
+    transform: translateY(25%);
+  }
+  .carousel-root {
+    max-width: 100%;
+    max-height: 100vh;
+  }
+  .carousel .slider-wrapper {
+    width: 90vw;
+    height: 100%;
+  }
+  .carousel-slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel-arrow-left {
+    order: 1;
+    font-size: 8vh;
+    transform: translate(-100%, 0%);
+  }
+  .carousel-arrow-right {
+    order: 1;
+    font-size: 8vh;
+    transform: translate(100%, -100%);
   }
 }
