@@ -231,8 +231,8 @@ export default function About() {
           </div>
         </div>
         <div className="aboutSlideContainer">
-          {/* SLIDE 5 */}
-          <div className="aboutSlideContent">
+          {/* SLIDE 6 */}
+          <div className="aboutSlideContent" id='slide6'>
             <div className="aboutSlideTitle" />
             <div className="aboutSlideInfo">
               <h4 style={{ fontWeight: 'lighter' }}>

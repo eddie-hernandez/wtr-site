@@ -1,5 +1,5 @@
 import './App.css'
-import { Routes, Route, useLocation } from 'react-router-dom'
+import { Routes, Route, useLocation, useNavigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import Landing from './pages/landing/Landing'
 import Main from './pages/main/Main'
@@ -10,8 +10,9 @@ import ReturnButton from './components/returnButton/ReturnButton'
 import About from './pages/about/About'
 
 export default function App() {
-  const [checkYes, setCheckYes] = useState(false)
+  const [checkYes, setCheckYes] = useState(null)
   const location = useLocation().pathname
+  const navigate = useNavigate()
 
   useEffect(() => {
     if (location === '/main') {
@@ -32,19 +33,27 @@ export default function App() {
     }
   }, [location])
 
+  useEffect(() => {
+    if (checkYes === true) {
+      navigate('/main')
+    }
+  }, [checkYes])
+
   return (
     <div className="App">
-      {checkYes === false && (
+      {checkYes !== null && checkYes === false && (
         <>
           <h1 className="errorMessage">NOT ALLOWED</h1>
         </>
       )}
       {checkYes === true && <ReturnButton />}
       <Routes>
-        <Route
-          path="/"
-          element={<Landing checkYes={checkYes} setCheckYes={setCheckYes} />}
-        />
+        {checkYes === null && (
+          <Route
+            path="/"
+            element={<Landing checkYes={checkYes} setCheckYes={setCheckYes} />}
+          />
+        )}
         {checkYes === true && (
           <>
             <Route path="/main" element={<Main />} />
