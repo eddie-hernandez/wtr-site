@@ -1,3 +1,7 @@
+.pageContainer[id='aboutpg'] {
+  overflow: hidden;
+}
+
 .aboutSlideContainer h1 {
   font-size: 12vh;
 }
