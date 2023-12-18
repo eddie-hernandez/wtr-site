@@ -1,5 +1,6 @@
 .pageContainer[id='zinepage'] {
   transform: translateY(5%);
+  overflow: hidden;
 }
 
 .carousel-root {
