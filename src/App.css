@@ -4,6 +4,12 @@
   align-items: center;
 }
 
+.errorMessage {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+
 .overflowContainer {
   display: flex;
   flex-direction: column;

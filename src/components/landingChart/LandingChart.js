@@ -2,20 +2,21 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './LandingChart.css'
 
-export default function LandingChart() {
+export default function LandingChart({ checkYes, setCheckYes }) {
   const navigate = useNavigate()
   const [choice, setChoice] = useState(null)
 
   function handleChoice(selectedChoice) {
     if (selectedChoice) {
       setChoice(true)
+      setCheckYes(true)
     } else {
       const customWindow = window.open('', '_blank', '')
       customWindow.close()
     }
   }
 
-  if (choice) {
+  if (checkYes === true) {
     navigate('/main')
   }
 
@@ -27,7 +28,7 @@ export default function LandingChart() {
           <h1 className="type1">WAR TAX RESISTANCE?</h1>
         </div>
       </div>
-      <div className="chartLine vertical" id='vertical1' />
+      <div className="chartLine vertical" id="vertical1" />
       <div className="horizontalContainer">
         <div
           className="sectionBox"

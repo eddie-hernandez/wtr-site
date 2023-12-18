@@ -1,6 +1,6 @@
 import './App.css'
 import { Routes, Route, useLocation } from 'react-router-dom'
-import { useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import Landing from './pages/landing/Landing'
 import Main from './pages/main/Main'
 import Zine from './pages/zine/Zine'
@@ -10,6 +10,7 @@ import ReturnButton from './components/returnButton/ReturnButton'
 import About from './pages/about/About'
 
 export default function App() {
+  const [checkYes, setCheckYes] = useState(false)
   const location = useLocation().pathname
 
   useEffect(() => {
@@ -33,14 +34,26 @@ export default function App() {
 
   return (
     <div className="App">
-      <ReturnButton />
+      {checkYes === false && (
+        <>
+          <h1 className="errorMessage">NOT ALLOWED</h1>
+        </>
+      )}
+      {checkYes === true && <ReturnButton />}
       <Routes>
-        <Route path="/" element={<Landing />} />
-        <Route path="/main" element={<Main />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/zine" element={<Zine />} />
-        <Route path="/pledgeform" element={<Form />} />
-        {/* <Route path="/pledged" element={<Pledged />} /> */}
+        <Route
+          path="/"
+          element={<Landing checkYes={checkYes} setCheckYes={setCheckYes} />}
+        />
+        {checkYes === true && (
+          <>
+            <Route path="/main" element={<Main />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/zine" element={<Zine />} />
+            <Route path="/pledgeform" element={<Form />} />
+            {/* <Route path="/pledged" element={<Pledged />} /> */}
+          </>
+        )}
       </Routes>
     </div>
   )
