@@ -110,11 +110,11 @@ export default function About() {
         </div>
         <div className="aboutSlideContainer">
           {/* SLIDE 3 */}
-          <div className="aboutSlideContent">
+          <div className="aboutSlideContent" id='slide3'>
             <div className="aboutSlideTitle">
               <h1>We know</h1>
             </div>
-            <div className="aboutSlideInfo">
+            <div className="aboutSlideInfo" id='slide3'>
               <h4>
                 that $1 of tax paid does not equal $1 given to the military.
               </h4>

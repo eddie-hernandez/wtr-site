@@ -158,12 +158,26 @@
   }
   .pageContainer[id='aboutpg'] .carousel .slider-wrapper {
     width: 100vw;
+    max-height: 65vh;
   }
   .aboutSlideContent {
-    margin-top: 15vh;
+    margin-top: 10vh;
     padding-left: 0vh;
   }
+  .aboutSlideContent[id='slide1'] {
+    margin-top: 15vh;
+    row-gap: 5vh;
+  }
+  .aboutSlideContent[id='slide3'] {
+    row-gap: 3vh;
+  }
+  .aboutSlideInfo[id='slide3'] {
+    row-gap: 2vh;
+  }
   .aboutSlideContent[id='slide4'] {
+    margin-top: 10vh;
+  }
+  .aboutSlideContent[id='slide5'] {
     margin-top: 15vh;
   }
   .aboutSlideTitle h1 {
