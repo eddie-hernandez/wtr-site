@@ -1,8 +1,4 @@
 import React from 'react'
-// import Slider from 'react-slick'
-// import 'slick-carousel/slick/slick.css'
-// import 'slick-carousel/slick/slick-theme.css'
-
 import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import './Zine.css'
@@ -17,14 +13,6 @@ import slide6 from '../../assets/about/6.png'
 import slide7 from '../../assets/about/7.png'
 
 export default function Zine() {
-  // const settings = {
-  //   dots: false,
-  //   infinite: false,
-  //   speed: 300,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  // }
-
   function renderCustomPrevArrow(onClickHandler, hasPrev, label) {
     if (!hasPrev) {
       return (
@@ -38,7 +26,6 @@ export default function Zine() {
         onClick={onClickHandler}
         className="carousel-arrow carousel-arrow-left"
       >
-        {/* You can place your custom icon or text for the previous arrow here */}
         {'<'}
       </h1>
     )
@@ -64,7 +51,6 @@ export default function Zine() {
 
   return (
     <div className="pageContainer" id="zinepage">
-      {/* <div className="sliderContainer"> */}
       <Carousel
         showThumbs={false}
         showIndicators={false}
@@ -72,29 +58,28 @@ export default function Zine() {
         renderArrowPrev={renderCustomPrevArrow}
         renderArrowNext={renderCustomNextArrow}
       >
-        <div className="">
-          <img src={slide1} alt="slide1" className="" />
+        <div>
+          <img src={slide1} alt="slide1" />
         </div>
-        <div className="">
-          <img src={slide2} alt="slide2" className="" />
+        <div>
+          <img src={slide2} alt="slide2" />
         </div>
-        <div className="">
-          <img src={slide3} alt="slide3" className="" />
+        <div>
+          <img src={slide3} alt="slide3" />
         </div>
-        <div className="">
-          <img src={slide4} alt="slide4" className="" />
+        <div>
+          <img src={slide4} alt="slide4" />
         </div>
-        <div className="">
-          <img src={slide5} alt="slide5" className="" />
+        <div>
+          <img src={slide5} alt="slide5" />
         </div>
-        <div className="">
-          <img src={slide6} alt="slide6" className="" />
+        <div>
+          <img src={slide6} alt="slide6" />
         </div>
-        <div className="">
-          <img src={slide7} alt="slide7" className="" />
+        <div>
+          <img src={slide7} alt="slide7" />
         </div>
       </Carousel>
     </div>
-    // </div>
   )
 }
