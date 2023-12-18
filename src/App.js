@@ -1,5 +1,11 @@
 import './App.css'
-import { Routes, Route, useLocation, useNavigate } from 'react-router-dom'
+import {
+  Routes,
+  Route,
+  useLocation,
+  useNavigate,
+  Navigate,
+} from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import Landing from './pages/landing/Landing'
 import Main from './pages/main/Main'
@@ -33,17 +39,11 @@ export default function App() {
     }
   }, [location])
 
-  useEffect(() => {
-    if (checkYes === true) {
-      navigate('/main')
-    }
-  }, [checkYes])
-
   return (
     <div className="App">
       {checkYes !== null && checkYes === false && (
         <>
-          <h1 className="errorMessage">NOT ALLOWED</h1>
+          <Navigate to="/error" replace />
         </>
       )}
       {checkYes === true && <ReturnButton />}
@@ -54,15 +54,17 @@ export default function App() {
             element={<Landing checkYes={checkYes} setCheckYes={setCheckYes} />}
           />
         )}
-        {checkYes === true && (
-          <>
-            <Route path="/main" element={<Main />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/zine" element={<Zine />} />
-            <Route path="/pledgeform" element={<Form />} />
-            {/* <Route path="/pledged" element={<Pledged />} /> */}
-          </>
-        )}
+        <>
+          <Route path="/main" element={<Main />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/zine" element={<Zine />} />
+          <Route path="/pledgeform" element={<Form />} />
+          <Route
+            path="/error"
+            element={<h1 className="errorMessage">NOT ALLOWED</h1>}
+          />
+          {/* <Route path="/pledged" element={<Pledged />} /> */}
+        </>
       </Routes>
     </div>
   )

@@ -10,10 +10,12 @@ export default function LandingChart({ checkYes, setCheckYes }) {
     if (selectedChoice) {
       setChoice(true)
       setCheckYes(true)
+      navigate('/main')
     } else {
       setCheckYes(false)
-      const customWindow = window.open('', '_blank', '')
-      customWindow.close()
+      navigate('/error')
+      // const customWindow = window.open('', '_blank', '')
+      // customWindow.close()
     }
   }
 
