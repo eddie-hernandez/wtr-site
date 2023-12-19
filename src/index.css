@@ -4,6 +4,7 @@ body {
   background-image: url('./assets/bg-01.png');
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 
 body.whitebg {
